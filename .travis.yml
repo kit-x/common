@@ -1,0 +1,18 @@
+language: go
+
+go:
+  - "1.11.x"
+
+env:
+  global:
+    - GO111MODULE=on
+    - CODECOV_TOKEN="0bf1308e-1035-4ad2-b2b9-85bc589ba5bd"
+
+install:
+  - go mod download
+
+script:
+  - make ci
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

@@ -1,0 +1,10 @@
+{
+  "Exclude": [
+    "exported type (\\w+) should have comment or be unexported",
+    "exported \\w+ (\\S*['.]*)([a-zA-Z'.*]*) should have comment (or a comment on this block) or be unexported",
+    "exported const (\\w+) should have comment (or a comment on this block) or be unexported",
+    "exported function \\w+ should have comment or be unexported",
+    "Errors unhandled.,LOW,HIGH",
+    "Use of unsafe calls should be audited,LOW,HIGH"
+  ]
+}
